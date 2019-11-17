@@ -9,16 +9,18 @@ public class calculation
 		int x = s.nextInt();
 		int y = s.nextInt();
 		choice = scan.nextLine();
-		calculation cl = new calculation();
-		int add = cl.Addition(x,y);
-		int sub = cl.Sub(x,y);
-		int div = cl.Div(x,y);
+		add a = new add();
+		div d = new div();
+		sub s = new sub();
+		int ad = a.Addition(x,y);
+		int su = s.Sub(x,y);
+		int di = d.Div(x,y);
 		System.out.println("Pick up the choices 1.add 2.sub 3.div");
 		if(choice=="1")
-		{System.out.println("Addition : "+add);}
+		{System.out.println("Addition : "+ad);}
 		else if(choice=="2")
-		{System.out.println("Subtraction : "+sub);}
+		{System.out.println("Subtraction : "+su);}
 		else
-		{System.out.println("Division : "+div);}
+		{System.out.println("Division : "+di);}
 	}
 }
