@@ -18,7 +18,7 @@ public class calculation
 		{System.out.println("Addition : "+add);}
 		else if(choice=="2")
 		{System.out.println("Subtraction : "+sub);}
-		else(choice=="3")
+		else
 		{System.out.println("Division : "+div);}
 	}
 }
