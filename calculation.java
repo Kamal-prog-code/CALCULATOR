@@ -1,30 +1,27 @@
-import x.*;
+import  x.*;
 import java.util.*;
-public class calculation
+public class calculation 
 {
 	public static void main(String args[])
 	{
-		Scanner s = new Scanner(System.in);
-		String choice = null;
-		int x = s.nextInt();
-		int y = s.nextInt();
-		choice = scan.nextLine();
-		add a = new add();
-		div d = new div();
-		sub s = new sub();
-		mul m = new mul();
-		int ad = a.Addition(x,y);
-		int su = s.Sub(x,y);
-		int di = d.Div(x,y);
-		int mu = m.Mul(x,y);
+		Scanner sc = new Scanner(System.in);
+		System.out.println("Enter ur desired numbers");
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		x.add a = new x.add();
+		x.div d = new x.div();
+		x.sub s = new x.sub();
+		x.mul m = new x.mul();
 		System.out.println("Pick up the choices 1.add 2.sub 3.mul 4.div");
-		if(choice=="1")
-		{System.out.println("Addition : "+ad);}
-		else if(choice=="2")
-		{System.out.println("Subtraction : "+su);}
-		else if(choice=="3")
-		{System.out.println("Multiplication : "+mu);}
-		else
-		{System.out.println("Division : "+di);}
+		int choice = sc.nextInt();
+		if(choice==1)
+		{a.Addition(x,y);}
+		else if(choice==2)
+		{s.Sub(x,y);}
+		else if(choice==3)
+		{m.Mul(x,y);}
+		else if(choice==4)
+		{d.Div(x,y);}
+		else{System.out.println("Please enter valid entry");}
 	}
 }
