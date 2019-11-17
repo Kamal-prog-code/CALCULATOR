@@ -1,5 +1,5 @@
 package x;
-public class Add
+public class add
 {
    
    public int Addition(int x, int y)
