@@ -1,18 +1,11 @@
-import java.util.Scanner;
-
-class AddNumbers
+package x;
+public class Add
 {
-   public static void main(String args[])
+   
+   public void Addition(int x, int y)
    {
-      int x, y, z;
-
-      System.out.println("Enter two integers to calculate their sum");
-      Scanner in = new Scanner(System.in);
-     
-      x = in.nextInt();
-      y = in.nextInt();
+      int z=0;
       z = x + y;
-     
       System.out.println("Sum of the integers = " + z);
    }
 }
