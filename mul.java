@@ -1,9 +1,9 @@
 package x;
 public class mul
 {
-	public int Mul(int a, int b)
+	public void Mul(int a, int b)
 	{
 		int c=a*b;
-		return c;
+		System.out.println("Multiplication : "+c);
 	}
 }
